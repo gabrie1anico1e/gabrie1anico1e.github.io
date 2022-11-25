@@ -1,0 +1,156 @@
+/* Around the Way Vinyl! Style CSS */
+
+/*GENERAL STYLING*/
+
+@Font-face{
+
+font-family: 'Roboto', sans-serif;
+}
+
+header{
+	display: grid;
+grid-template-columns: 1fr;
+	text-align: center;
+	padding-top: 100px;
+background-image: url(https://images.unsplash.com/photo-1567093614516-849c1923e122?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+	background-size: 100% auto;
+	padding: 100px;
+	margin: 20px;
+}
+
+body{
+  background-image: linear-gradient(red, yellow)
+}
+
+.topnav{
+	background-color: black;
+	overflow: hidden;
+	margin: 20px;
+}
+
+li{
+	list-style: none;
+	text-align: center;
+}
+
+ul{
+	text-align: center;
+	width: auto;
+}
+
+.topnav a{
+	width: 200px;
+	position: static;
+	align-content: center;
+	 text-decoration: none;
+	 float: left;
+	color: white;
+  padding: 20x;
+  border: 10px;
+  margin: 20px;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.topnav a:hover {
+  background-color: orange;
+  text-align: center;
+  }
+
+.resize{
+	width: 400px;
+	height: 400px;
+}
+
+.nested {
+	margin: 0 auto;
+	display: inline-block;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+}
+
+.nested >div{
+	padding:  1em;
+	float: left;
+	margin: 0, auto;
+}
+
+.container{
+	width: 100%;
+	margin: 100px 100px;
+	text-align: center relative;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+  align-items: start;
+}
+.item1 {
+  grid-area: a;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+}
+.item2 {
+  grid-area: b;
+  align-self: start;
+    border: 2px;
+  border-style: solid;
+  border-color: black;
+}
+.item3 {
+  grid-area: c;
+  align-self: end;
+    border: 2px;
+  border-style: solid;
+  border-color: black;
+}
+.item4 {
+  grid-area: d;
+  align-self: center;
+    border: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+
+#genredivider{
+	padding: 40px;
+	width: 100%;
+	float: none;
+}
+
+h1{
+	font-family: Roboto;
+	font-weight: light;
+	color: ghostwhite;
+}
+.onwhite{
+	color: black;
+}
+
+p{
+	font-family: Roboto;
+	color: ghostwhite;
+}
+
+.hero-image{
+	margin: 100px;
+	padding: 20%;
+	height: 100%;
+	width: 100%;
+	text-align: centre;
+}
+
+.button{
+padding: 20px;
+
+}
+
