@@ -1,0 +1,284 @@
+/* AQUA STYLESHEET - PART 4
+
+General to specific, fonts styles, body, section, classes IDs 
+
+RESOURCES:
+Learning to scroll
+https://blog.hubspot.com/website/horizontal-scrolling#:~:text=To%20enable%20horizontal%20scrolling%2C%20we,it%20accessible%20via%20horizontal%20scrolling.
+
+Learning float:
+https://developer.mozilla.org/en-US/docs/Web/CSS/float
+
+Learning Buttons:
+https://www.smashingmagazine.com/2009/11/designing-css-buttons-techniques-and-resources/
+
+Learning Image Grid:
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+
+Learning to add in Bootstrap: ;
+https://www.youtube.com/watch?v=MJRmBfY7WrU
+
+Learning to Override Bootstrap: ;
+https://blog.hubspot.com/website/how-to-override-bootstrap-css
+
+(For quick comments
+Copy and paste) >
+/* Comment */
+
+
+/* TYPE RULES */
+h1{
+	font-family: sans-serif;
+	text-align: center;
+}
+
+h1.black{
+		font-family: sans-serif;
+		color: black;
+		text-align: left;
+}
+
+h1.right{
+		font-family: sans-serif;
+		color: black;
+		text-align: right;
+}
+
+h3{
+	font-family: sans-serif;
+	font-weight: lighter;
+	text-align: center;
+}
+
+
+h4{
+	font-family: sans-serif;
+	font-weight: lighter;
+	text-align: left;
+	color: black;
+}
+
+h4.right{
+	font-family: sans-serif;
+	font-weight: lighter;
+	text-align: right;
+	color: black;
+}
+
+h6{
+	font-weight: lighter;
+}
+
+h6.black{
+		font-weight: lighter;
+		color: black;
+}
+
+h6.right{
+		font-weight: lighter;
+		color: black;
+		text-align: right;
+}
+
+/* BODY & SECTION STYLES - PAGE 1*/
+
+
+body.container{
+	margin: 50px,50px;
+}
+
+section{
+	padding: 50px;
+	margin: 0,auto;
+	height: 250px;
+	border-radius: 40px;
+}
+
+/*Margin Shorthand top, right, bottom,left OR top&bottom, right&left*/
+
+div.item1{
+	width:1000 ;
+	height: 600px;
+	margin: 20px,20px;
+	padding: 100px;
+	border: 2px;
+	color: white;
+	background-image: url(https://images.unsplash.com/photo-1496196614460-48988a57fccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80);
+	background-size: cover;
+}
+
+/* DONATE BUTTON FLOATING*/
+
+section.donate{
+	width: 150px;
+	height:100px;
+	padding:20px;
+	border-radius: 20px;
+	margin-top: 40px;
+	margin-left: 5px;
+	background-color: rgba(0,0,0,.5);
+	position: relative;
+}
+
+.button {
+	margin: 25px,10px;
+  padding:10px;
+  background-color: orange;
+  color:#000;
+  text-decoration:none;
+  border-radius: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+a:hover{
+	background-color: lightblue;
+}
+
+.btn{
+	margin-top: 100px;
+	background-color: orange;
+}
+
+h3.left{
+	font-family: sans-serif;
+	text-align: left;
+	font-weight: lighter;
+	color: orange;
+	margin: 20px, 10px;
+	align-content: center;
+}
+
+
+/* background-size:cover , stretches image to the largest amount of space */
+
+/* STYLE RULES PAGE 2 */
+
+div.item2{
+	min-width: 1200px;
+	height: 500px;
+	margin: 20px,20px;
+	padding: 100px;
+	border: 2px;
+	color: white;
+	background-color: white;
+}
+
+section.iteminside1{
+		width: 800;
+		height: 500;
+		background-color: rgba(0,0,0,.5);
+}
+
+section.iteminside2{
+	text-align: left;
+	width: 500px;
+	float: left;
+	padding: 20px;
+	background-color: none;
+}
+section.iteminside22{
+	width: 500px;
+	height: 400px;
+	float: right;
+	background-image: url(https://freight.cargo.site/t/original/i/edd2a7410d189df1e6a8cdb937f4e9acb131688325e71a1ff9893931361217c9/Place-To-Visit-Before-Theyre-Gone-CoralReef.gif);
+	background-size: cover;
+	float: right;
+}
+
+/* STYLE RULES PAGE 3*/
+
+div.item3{
+	min-width: 1200px;
+	height: 500px;
+	margin: 20px,20px;
+	padding: 100px;
+	border: 2px;
+	color: white;
+	background-color: white;
+}
+
+section.iteminside3{
+	width: 500px;
+	height: 500px;
+	padding: 20px;
+	float: right;
+	color: black;
+
+}
+
+section.iteminside33{
+	width: 500px;
+	height: 500px;
+	float: left;
+background-image: url(https://psl.noaa.gov/marine-heatwaves/img/MHW_maps_demo3.png);
+background-size: cover;
+}
+
+/* STYLE RULES PAGE 4*/
+
+
+div.item4{
+	min-width: 1200px;
+	margin: 20px,20px;
+	padding: 100px;
+	border: 2px;
+	color: white;
+	background-color: white;
+}
+
+section.iteminside4{
+	text-align: right;
+	float: left;
+	width: 100px;
+	margin-right: 200px;
+	padding-right: 40px;
+}
+/* IMAGE GRID STYLE SHEET*/
+section.inside44{
+margin-left: 400px;
+}
+
+div.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+section.footer{
+margin: 100px,100px;
+}
+
+
+
+
