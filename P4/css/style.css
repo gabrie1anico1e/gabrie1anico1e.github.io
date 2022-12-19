@@ -1,0 +1,330 @@
+/* CLEAR MBNT STYLE CSS 
+
+Resources:
+Understanding VW and VH
+https://webflow.com/blog/how-and-why-to-use-vh-and-vw-in-webflow
+
+COLOURS
+
+NAVY BLUE:#2E3175
+DARK GREEN: #3A5E38
+BRIGHT GREEN: #6AA950
+ORANGE: #F59E08
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+/*GENERAL PAGE STYLING*/
+
+
+
+html {
+        box-sizing: border-box;
+    }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+        content: " ";
+        display: table;
+    }
+
+.row:after {
+        clear: both;
+    }
+
+
+li{
+        list-style: none;
+        text-decoration: none;
+    }
+
+a{
+        text-decoration: none;
+        list-style: none;
+        color:white ;
+        font-family: Open Sans, sans-serif;
+        font-weight: bolder;
+}
+
+a.course{
+        text-decoration: none;
+        list-style: none;
+        color:#2E3175 ;
+        font-family: Open Sans, sans-serif;
+        font-weight: bolder;
+
+    }
+
+button{
+        background: #FF9D00;
+        padding-top: 10px;
+        border-radius: 20px;
+        border: none;
+    }
+
+
+
+/* TEXT STYLING */
+
+@font-face {
+        font-family: 'open_sansregular';
+        src: url('opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
+             url('opensans-variablefont_wdthwght-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+@font-face {
+        font-family: 'oswaldregular';
+        src: url('oswald-variablefont_wght-webfont.woff2') format('woff2'),
+             url('oswald-variablefont_wght-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+h1{
+    	font-family: 'Open Sans', sans-serif;
+    	color: white;
+
+
+    }
+
+h1.openblue{
+        color: #2E3175;
+    }
+
+h1.oswald{
+    	font-family: 'Oswald';
+        color: #2E3175;
+
+    }
+
+h2.oswald{
+    font-family: 'Oswald';
+    color: white;
+    }
+
+h5{
+            color: white;
+            background-color: #6AA950 ;
+            border-radius: 20px;
+            padding:10px;
+
+        }
+
+p{
+        font-family: 'Open Sans', sans-serif;
+    }
+p.white{
+    color: white;
+    }
+
+p.smaller{
+
+}
+
+
+/*IMAGE STYLING*/
+
+#logo{
+    min-height:10px;
+    min-height:10px;
+    }
+
+.resizelogo{
+    width: 5%vw;
+    margin: 50px;
+    margin-left: 100px;
+    height: 100px;
+    }
+
+
+/*----------------HEADER SECTION----------------*/
+
+div.navbar navbar-expand-lg navbar-light bg-light{
+}
+
+/*--------------HERO SECTION-----------*/
+
+#hero{
+        width: 100vw;
+        height: 550px;
+        background-image: url(https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80 );
+        background-size: cover;
+        background-position: 1px,10px;
+    }
+
+div.herotext{
+        padding: 50px;
+        padding-top: 200px;
+        width: 70vw;
+    }
+
+/*-----------SERVICES SECTION----------*/
+
+.servicetitle{
+    padding: 20px;
+    margin-left: 35vw;
+}
+
+
+#commercial{
+        width: 30vw;
+        height: 600px;
+        background-image: url(https://images.unsplash.com/photo-1544475982-9a3b42fff446?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+        background-size: cover;
+    }
+
+.commercialtext{
+    padding: 8em;
+    margin-top: 45%;
+    max-width: 1462px;
+}
+
+#residential{
+        width: 30vw;
+        height: 600px;
+        background-image: url(https://blog.renovationfind.com/wp-content/uploads/2019/01/EmilySmith-basementbefore.jpg);
+         background-size: cover;
+    }
+
+.residencialtext{
+    padding: 8em;
+    margin-top: 45%;
+}
+
+#industrial{
+        width: 30vw;
+        height: 600px;
+        background-image: url(https://images.unsplash.com/photo-1509390288171-ce2088f7d08e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+         background-size: cover;
+    }
+.industrialtext{
+    padding: 8em;
+    margin-top: 45%;
+}
+
+
+/*---------LEARN SECTION--------------*/
+
+#learnimage{
+        float: left;
+        width: 30vw;
+        padding: 50px;
+    }
+
+.containerlearn{
+        width: 95vw;
+        height: 300px;
+        padding: 50px;
+        background-color: lightgrey;
+    }
+
+/*----- PREVIOUS CLIENTS SECTION ------*/
+
+#previousclients{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    }
+
+
+/*----- APPLY SECTION------*/
+
+#heroapply{
+        width: 100vw;
+        height: 550px;
+        background-image: url(https://images.unsplash.com/photo-1488330890490-c291ecf62571?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+        background-size: cover;
+    }
+
+div.herotextapply{
+        padding: 50px;
+        padding-top: 200px;
+        width: 60vw;
+        margin-left: 50px;
+    }
+
+div.needs{
+        width: 80vw;
+        padding-top: 50px;
+        padding-inline: 150px;
+    }
+
+div.containercourse{
+    width: 80vw;
+    height: 500px;
+    padding: 50px;
+    overflow: scroll;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: #2E3175;
+    }
+
+.course1{
+        border: 1px;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 15px;
+        background-color: white;
+
+    }
+
+
+/*---------ABOUT SECTION--------*/
+
+#heroabout{
+        width: 100vw;
+        height: 550px;
+        background-image: url(https://images.unsplash.com/photo-1625470496744-a01bf36a262f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+        background-size: cover;
+    }
+
+div.herotextabout{
+        padding: 50px;
+        padding-top: 200px;
+        width: 60vw;
+        margin-left: 50px;
+    }
+
+div.about{
+        width: 80vw;
+        padding-top: 50px;
+        padding-inline: 150px;
+        height: 300px;
+    }
+
+div.founder{
+        width: 100vw;
+        height: 550px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: lightgrey;
+        margin-bottom: 50px;
+    }
+
+#founderimage{
+        width: 30vw;
+        padding: 50px;
+        margin-top: -20px;
+    }
+
+.resizesmaller{
+       height: 300px;
+       width: 300px;
+    }
+
+#foundertext{
+margin-top: -400px;
+width: 40vw;
+
+}
+
